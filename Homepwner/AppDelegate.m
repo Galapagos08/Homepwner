@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "ItemStore.h"
+#import "ItemsViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +18,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    // Create an ItemStore
+    ItemStore *itemStore = [ItemStore new];
+    
+    // Access the ItemsViewController
+    ItemsViewController *ivc = (ItemsViewController *)self.window.rootViewController;
+    ivc.itemStore = itemStore;
+    
     return YES;
 }
 

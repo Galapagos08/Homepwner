@@ -14,6 +14,7 @@
 		F74ACC341D88726600529570 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F74ACC321D88726600529570 /* LaunchScreen.storyboard */; };
 		F74ACC401D88741900529570 /* ItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F74ACC3F1D88741900529570 /* ItemsViewController.m */; };
 		F74ACC431D88754000529570 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = F74ACC421D88754000529570 /* Item.m */; };
+		F74ACC461D88781500529570 /* ItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F74ACC451D88781500529570 /* ItemStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,8 @@
 		F74ACC3F1D88741900529570 /* ItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItemsViewController.m; path = ../ItemsViewController.m; sourceTree = "<group>"; };
 		F74ACC411D88754000529570 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Item.h; path = ../Item.h; sourceTree = "<group>"; };
 		F74ACC421D88754000529570 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Item.m; path = ../Item.m; sourceTree = "<group>"; };
+		F74ACC441D88781500529570 /* ItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemStore.h; sourceTree = "<group>"; };
+		F74ACC451D88781500529570 /* ItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,8 @@
 			children = (
 				F74ACC411D88754000529570 /* Item.h */,
 				F74ACC421D88754000529570 /* Item.m */,
+				F74ACC441D88781500529570 /* ItemStore.h */,
+				F74ACC451D88781500529570 /* ItemStore.m */,
 				F74ACC271D88726600529570 /* AppDelegate.h */,
 				F74ACC281D88726600529570 /* AppDelegate.m */,
 				F74ACC3E1D88741900529570 /* ItemsViewController.h */,
@@ -163,6 +168,7 @@
 				F74ACC401D88741900529570 /* ItemsViewController.m in Sources */,
 				F74ACC291D88726600529570 /* AppDelegate.m in Sources */,
 				F74ACC261D88726600529570 /* main.m in Sources */,
+				F74ACC461D88781500529570 /* ItemStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
