@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ItemsViewController.h
 //  Homepwner
 //
 //  Created by Dan Esrey on 2016/13/09.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ItemsViewController : UITableViewController
 
 @end
-
