@@ -16,6 +16,20 @@
 
 @implementation ItemsViewController
 
+// MARK: - View Lifecycle
+- (void)viewDidLoad {
+    [super viewDidLoad];
+  
+    // Get the height of the status bar
+    CGFloat statusBarHeight =
+    [UIApplication sharedApplication].statusBarFrame.size.height;
+   
+    UIEdgeInsets insets = UIEdgeInsetsMake(statusBarHeight, 0, 0, 0);
+    self.tableView.contentInset = insets;
+    self.tableView.scrollIndicatorInsets = insets;
+}
+
+
 // MARK: - Table View Data Source and Delegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.itemStore.allItems.count;
