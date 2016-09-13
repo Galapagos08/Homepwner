@@ -24,14 +24,16 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
-    // Create an instance of UITableViewCell, with default appearance
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1
-                                                   reuseIdentifier:@"UITableViewCell"];
+    // Get a new or recycled cell
+    UITableViewCell *cell =
+    [self.tableView dequeueReusableCellWithIdentifier:@"UITableViewCell"
+                                         forIndexPath:indexPath];
 
     // Set the text on the cell with the description of the item
     // that is at the nth index of items, where n = row this cell
     // will appear in on the tableview
     Item *item = self.itemStore.allItems[indexPath.row];
+    
     // Configure the cell with the item's properties
     cell.textLabel.text = item.name;
     cell.detailTextLabel.text = [NSString stringWithFormat:@"$%d", item.valueInDollars];
