@@ -12,7 +12,7 @@
 #import "ItemCell.h"
 #import "DetailViewController.h"
 
-@interface ItemsViewController ()
+@interface ItemsViewController () 
 
 @end
 
@@ -32,32 +32,17 @@
                           withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
-- (IBAction)toggleEditingMode:(id)sender {
-    // If you are currently in editing mode...
-    if (self.editing) {
-        // Change the text of the button to inform the user
-        [sender setTitle:@"Edit" forState:UIControlStateNormal];
-        // Turn off editing mode
-        [self setEditing:NO animated:YES];
-    } else {
-        // Change the text of the button to inform the user
-        [sender setTitle:@"Done" forState:UIControlStateNormal];
-        // Turn on editing mode
-        [self setEditing:YES animated:YES];
+- (instancetype)initWithCoder:(NSCoder *)aDecoder{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        self.navigationItem.leftBarButtonItem = [self editButtonItem];
     }
+    return self;
 }
 
 // MARK: - View Lifecycle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Get the height of the status bar
-    CGFloat statusBarHeight = [UIApplication sharedApplication].statusBarFrame.size.height;
-    
-    UIEdgeInsets insets = UIEdgeInsetsMake(statusBarHeight, 0, 0, 0);
-    self.tableView.contentInset = insets;
-    self.tableView.scrollIndicatorInsets = insets;
-    
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     self.tableView.estimatedRowHeight = 65;
 }
@@ -66,7 +51,6 @@
     [super viewWillAppear:animated];
     [self.tableView reloadData];
 }
-
 
 // MARK: - Table View Data Source and Delegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
