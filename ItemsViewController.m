@@ -57,7 +57,8 @@
     self.tableView.contentInset = insets;
     self.tableView.scrollIndicatorInsets = insets;
     
-    self.tableView.rowHeight = 65;
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    self.tableView.estimatedRowHeight = 65;
 }
 
 
@@ -72,6 +73,9 @@
     // Get a new or recycled cell
     ItemCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"ItemCell"
                                                           forIndexPath:indexPath];
+    
+    // Update the labels in case the dynamic font sizes have changed recently
+    [cell updateLabels];
     
     // Set the text on the cell with the description of the item
     // that is at the nth index of items, where n = row this cell
