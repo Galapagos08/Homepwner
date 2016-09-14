@@ -62,6 +62,11 @@
     self.tableView.estimatedRowHeight = 65;
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.tableView reloadData];
+}
+
 
 // MARK: - Table View Data Source and Delegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

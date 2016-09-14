@@ -29,6 +29,15 @@
     self.dateLabel.text = [[self dateFormatter] stringFromDate:self.item.dateCreated];
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    // Update the item's properties from the text fields
+    self.item.name = self.nameField.text;
+    self.item.serialNumber = self.serialNumberField.text;
+    NSNumber *numberInDollars = [[self valueFormatter] numberFromString:self.valueField.text];
+    self.item.valueInDollars = numberInDollars.intValue;
+}
+
 // MARK: - Formatters
 - (NSNumberFormatter *)valueFormatter {
     static NSNumberFormatter *formatter = nil;
@@ -51,5 +60,7 @@
     });
     return formatter;
 }
+
+
 
 @end
