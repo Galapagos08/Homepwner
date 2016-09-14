@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F739BD431D898D29000F4EA6 /* ItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F739BD421D898D29000F4EA6 /* ItemCell.m */; };
+		F739BD461D89C0EB000F4EA6 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F739BD451D89C0EB000F4EA6 /* DetailViewController.m */; };
 		F74ACC261D88726600529570 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F74ACC251D88726600529570 /* main.m */; };
 		F74ACC291D88726600529570 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F74ACC281D88726600529570 /* AppDelegate.m */; };
 		F74ACC2F1D88726600529570 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F74ACC2D1D88726600529570 /* Main.storyboard */; };
@@ -21,6 +22,8 @@
 /* Begin PBXFileReference section */
 		F739BD411D898D29000F4EA6 /* ItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCell.h; sourceTree = "<group>"; };
 		F739BD421D898D29000F4EA6 /* ItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCell.m; sourceTree = "<group>"; };
+		F739BD441D89C0EB000F4EA6 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = ../DetailViewController.h; sourceTree = "<group>"; };
+		F739BD451D89C0EB000F4EA6 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = ../DetailViewController.m; sourceTree = "<group>"; };
 		F74ACC211D88726600529570 /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F74ACC251D88726600529570 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F74ACC271D88726600529570 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -79,6 +82,8 @@
 				F74ACC3F1D88741900529570 /* ItemsViewController.m */,
 				F739BD411D898D29000F4EA6 /* ItemCell.h */,
 				F739BD421D898D29000F4EA6 /* ItemCell.m */,
+				F739BD441D89C0EB000F4EA6 /* DetailViewController.h */,
+				F739BD451D89C0EB000F4EA6 /* DetailViewController.m */,
 				F74ACC2D1D88726600529570 /* Main.storyboard */,
 				F74ACC301D88726600529570 /* Assets.xcassets */,
 				F74ACC321D88726600529570 /* LaunchScreen.storyboard */,
@@ -175,6 +180,7 @@
 				F74ACC291D88726600529570 /* AppDelegate.m in Sources */,
 				F74ACC261D88726600529570 /* main.m in Sources */,
 				F74ACC461D88781500529570 /* ItemStore.m in Sources */,
+				F739BD461D89C0EB000F4EA6 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
