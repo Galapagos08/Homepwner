@@ -17,6 +17,7 @@
 		F74ACC401D88741900529570 /* ItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F74ACC3F1D88741900529570 /* ItemsViewController.m */; };
 		F74ACC431D88754000529570 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = F74ACC421D88754000529570 /* Item.m */; };
 		F74ACC461D88781500529570 /* ItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F74ACC451D88781500529570 /* ItemStore.m */; };
+		F7FA38A31D8B642B00239020 /* ImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FA38A21D8B642B00239020 /* ImageStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		F74ACC421D88754000529570 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Item.m; path = ../Item.m; sourceTree = "<group>"; };
 		F74ACC441D88781500529570 /* ItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemStore.h; sourceTree = "<group>"; };
 		F74ACC451D88781500529570 /* ItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemStore.m; sourceTree = "<group>"; };
+		F7FA38A11D8B642B00239020 /* ImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageStore.h; sourceTree = "<group>"; };
+		F7FA38A21D8B642B00239020 /* ImageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,8 @@
 				F739BD421D898D29000F4EA6 /* ItemCell.m */,
 				F739BD441D89C0EB000F4EA6 /* DetailViewController.h */,
 				F739BD451D89C0EB000F4EA6 /* DetailViewController.m */,
+				F7FA38A11D8B642B00239020 /* ImageStore.h */,
+				F7FA38A21D8B642B00239020 /* ImageStore.m */,
 				F74ACC2D1D88726600529570 /* Main.storyboard */,
 				F74ACC301D88726600529570 /* Assets.xcassets */,
 				F74ACC321D88726600529570 /* LaunchScreen.storyboard */,
@@ -181,6 +186,7 @@
 				F74ACC261D88726600529570 /* main.m in Sources */,
 				F74ACC461D88781500529570 /* ItemStore.m in Sources */,
 				F739BD461D89C0EB000F4EA6 /* DetailViewController.m in Sources */,
+				F7FA38A31D8B642B00239020 /* ImageStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
