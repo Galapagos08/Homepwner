@@ -10,7 +10,7 @@
 #import "Item.h"
 #import "ItemStore.h"
 
-@interface DetailViewController ()<UITextFieldDelegate>
+@interface DetailViewController ()<UITextFieldDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
 
 - (IBAction)backgroundTapped:(UITapGestureRecognizer *)sender;
@@ -18,6 +18,8 @@
 @property (strong, nonatomic) IBOutlet UITextField *serialNumberField;
 @property (strong, nonatomic) IBOutlet UITextField *valueField;
 @property (strong, nonatomic) IBOutlet UILabel *dateLabel;
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
+- (IBAction)cameraButtonTapped:(UIBarButtonItem *)sender;
 
 @end
 
@@ -83,5 +85,22 @@
 
 - (IBAction)backgroundTapped:(UITapGestureRecognizer *)sender {
     [self.view endEditing:YES];
+}
+- (IBAction)cameraButtonTapped:(UIBarButtonItem *)sender {
+  
+    UIImagePickerController *ipc = [UIImagePickerController new];
+  
+    // If the device has a camera, take a picture.
+    if ([UIImagePickerController
+         isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        ipc.sourceType = UIImagePickerControllerSourceTypeCamera;
+    } else { // Otherwise, just pick a photo from teh library.
+        ipc.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    }
+    ipc.delegate = self;
+    
+    // Put the picker on the screen
+    [self presentViewController:ipc animated:YES completion:nil];
+
 }
 @end
